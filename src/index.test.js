@@ -1,12 +1,13 @@
 import sum from "./index";
-import jsdom from "jsdom";
-import fs from "fs";
+//import jsdom from "jsdom";
+//import fs from "fs";
 
 test("adds 1 + 2 to equal 3", () => {
     expect(sum(1, 2)).toBe(3);
 });
 
 
+/*
 test("should say hello", (done) => {
     const indexHTML = fs.readFileSync("./src/index.html", "utf-8");
     jsdom.env(indexHTML,
@@ -18,3 +19,4 @@ test("should say hello", (done) => {
         }
     );
 })
+*/
