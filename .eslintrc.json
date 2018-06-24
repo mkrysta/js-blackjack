@@ -3,18 +3,28 @@
     "extends": [
         "eslint:recommended",
         "plugin:import/errors",
-        "plugin:import/warnings"
+        "plugin:import/warnings",
+        "plugin:jest/recommended"
     ],
-        "parserOptions": {
+    "parserOptions": {
         "ecmaVersion": 2017,
         "sourceType": "module"
     },
     "env": {
         "browser": true,
         "node": true,
-        "mocha": true
+        "mocha": true,
+        "jest/globals": true
     },
     "rules": {
-        "no-console": 1
-    }
+        "no-console": 1,
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+    },
+    "plugins": [
+        "jest"
+    ]
   }
